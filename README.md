@@ -11,14 +11,14 @@ The project presented in this Master's dissertation focuses on the automatic det
     - 📁 `src/` – 
         - 📜 `aux.py` - Contains utility functions for model training and evaluation, such as early stopping and timing functions.
         - 📜 `convresnet.py` - Defines the architecture of the ConvResNet model, specifically tailored for ECG signal classification.
-        - 📜 `data.py` - Handles dataset loading, preprocessing, and batching for the ECG data.
+        - 📜 `data.py` - This module handles the loading, preprocessing, and batching of the ECG dataset. It defines a `label()` function that processes rhythm annotations, transforming them into numerical values suitable for model training. The script also imports several libraries, including `wfdb` for handling ECG data formats, and utilizes PyTorch’s `DataLoader` and `Dataset` classes for efficient data handling. The dataset is organized and preprocessed to ensure that ECG signals and their corresponding labels are correctly aligned for model training. Additionally, it manages the storage and retrieval of data, ensuring the integrity and accessibility of ECG recordings.
 
 - 📁 `resnext/` - folder containing ResNext implementation
-    - 📜 `main.py`- 
+    - 📜 `main.py`- This script contains the main logic for training and evaluating the ResNext model. It imports necessary libraries such as PyTorch for model implementation and custom modules like `ResNext`, `LazyDataset`, and `Scaler` for handling the dataset and model. The script includes functions like `fit()` for training the model, logging configurations, and early stopping mechanisms to avoid overfitting. It also handles model checkpoints and integrates with metrics like accuracy, precision, recall, and F1-score to evaluate performance. The script orchestrates the training, validation, and testing phases of the model, ensuring that results are logged and saved for later analysis.
     - 📁 `src/` – 
         - 📜 `aux.py` - 
         - 📜 `convresnet.py` -
-        - 📜 `data.py` - 
+        - 📜 `data.py` - This module handles the loading, preprocessing, and batching of the ECG dataset. It defines a `label()` function that processes rhythm annotations, transforming them into numerical values suitable for model training. The script also imports several libraries, including `wfdb` for handling ECG data formats, and utilizes PyTorch’s `DataLoader` and `Dataset` classes for efficient data handling. The dataset is organized and preprocessed to ensure that ECG signals and their corresponding labels are correctly aligned for model training. Additionally, it manages the storage and retrieval of data, ensuring the integrity and accessibility of ECG recordings.
 - 📄 `.gitignore` – Specifies files and directories to ignore when uploading the project to GitHub.
 - 📄 `LICENSE` – The project's license file, specifying usage and redistribution terms.
 - 📄 `README.md` – A markdown file explaining the project’s purpose and structure.
