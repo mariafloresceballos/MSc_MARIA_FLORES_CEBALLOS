@@ -6,14 +6,15 @@ The project presented in this Master's dissertation focuses on the automatic det
 
 ## 🗂️ **Project Structure**
 
-- 📁 `convolutional/` - 
-    - 📜 `main.py`- 
+- 📁 `convolutional/` - folder containing ConvResNet implementation
+    - 📜 `main.py` – This script contains the main logic for training and evaluating the ConvResNet model. It imports necessary libraries such as PyTorch for model implementation and custom modules like `ConvResNet`, `LazyDataset`, and `Scaler` for handling the dataset and model. The script includes functions like `fit()` for training the model, logging configurations, and early stopping mechanisms to avoid overfitting. It also handles model checkpoints and integrates with metrics like accuracy, precision, recall, and F1-score to evaluate performance. The script orchestrates the training, validation, and testing phases of the model, ensuring that results are logged and saved for later analysis.
     - 📁 `src/` – 
-        - 📜 `aux.py` - 
-        - 📜 `convresnet.py` -
-        - 📜 `data.py` -
-- 📁 `resnext/` - 
-    - `main.py`- 
+        - 📜 `aux.py` - Contains utility functions for model training and evaluation, such as early stopping and timing functions.
+        - 📜 `convresnet.py` - Defines the architecture of the ConvResNet model, specifically tailored for ECG signal classification.
+        - 📜 `data.py` - Handles dataset loading, preprocessing, and batching for the ECG data.
+
+- 📁 `resnext/` - folder containing ResNext implementation
+    - 📜 `main.py`- 
     - 📁 `src/` – 
         - 📜 `aux.py` - 
         - 📜 `convresnet.py` -
