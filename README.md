@@ -1,5 +1,4 @@
 # TFM_MARIA_FLORES_CEBALLOS
-# **GENUINE CARERS**
 
 Genuine Carers is a project about **Large Language Models (LLM)**, **Liquid Neural Netwroks (LNN)**, **Federated Leraning** and **Jailbreak**.
 
