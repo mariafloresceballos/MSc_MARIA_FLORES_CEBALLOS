@@ -1,1 +1,0 @@
-# PulsoVital - Convolutional Networks
