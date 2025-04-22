@@ -24,10 +24,11 @@ The project presented in this Master's dissertation focuses on the automatic det
 - 📄 `requirements.txt` – Contains a list of Python dependencies and their versions needed to run the project.
 
 ## 📊 Dataset
-- `HiTZ/Multilingual-Medical-Corpus`: Multilingual-Medical-Corpus is a 3 billion word multilingual corpus for training LLMs adapted to the medical domain. Multilingual-Medical-Corpus includes four languages, namely, English, Spanish, French, and Italian. So far, we are only using the Spanish portion.
+- `Icentia11k`: Icentia11k is a large dataset consisting of continuous raw electrocardiogram (ECG) signals from 11,000 patients, recorded using the CardioSTAT™ wearable device. The data, collected between 2017 and 2018, is annotated by a team of technologists and organized into segments of approximately 70 minutes. With a sampling rate of 250 Hz and 16-bit resolution, Icentia11k provides high-quality ECG data for developing and testing Deep Learning models for arrhythmia detection in real-world, long-term monitoring scenarios.
 
 ## 📈 Results
-- 📁 `GPT2/`
-    - 📓 `CfC_FC_GPT.ipynb` – This notebook contains the most information, runs smoothly, and is the easiest for running tests.
-
+- 📁 `results/`
+    - 📓 `train_metrics` – 
+    - 📓 `valid_metrics` – 
+    - 📓 `test_metrics` – 
 
