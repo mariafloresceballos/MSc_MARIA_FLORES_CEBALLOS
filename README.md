@@ -38,3 +38,13 @@ This Master's dissertation focuses on the automatic detection of atrial fibrilla
 First of all, install the packages indicated in requirements.txt:
 ```bash
 pip(3) install -r requirements.txt
+In order to apply the preprocessing decribed in the work (the .zip file from PhysioNet with the original Icentia11k must be downloaded at this point):
+```bash
+python(3) src/data.py
+To change the number of patients studied from the original Icentia11k database, modify number_of_patients:
+```bash
+for patient_path in tqdm(patient_dirs[:number_of_patients]):
+To execute the model of interest, go to main.py file in that folder:
+```bash
+python(3) main.py
+To change any configuration hyperparameters on the models, access to config.yaml file on that particular folder and save the changes before executing the main.py file.
