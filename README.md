@@ -30,12 +30,6 @@ This Master's dissertation focuses on the automatic detection of atrial fibrilla
 - 📄 `README.md` – A markdown file explaining the project’s purpose and structure.
 - 📄 `requirements.txt` – Contains a list of Python dependencies and their versions needed to run the project.
 
-## 📈 Results
-- 📁 `results/`
-    - 📓 `train_metrics.csv` – This CSV file contains the training metrics for each epoch, including overall performance metrics like accuracy, precision, recall, and F1 score, as well as metrics for each individual class (e.g., atrial fibrillation, normal sinus rhythm). It helps track the model's performance during training across multiple epochs.
-    - 📓 `valid_metrics.csv` – This CSV file contains the valid metrics for each epoch, including overall performance metrics like accuracy, precision, recall, and F1 score, as well as metrics for each individual class (e.g., atrial fibrillation, normal sinus rhythm). 
-    - 📓 `test_metrics.csv` – This CSV file contains the test metrics for each epoch, including overall performance metrics like accuracy, precision, recall, and F1 score, as well as metrics for each individual class (e.g., atrial fibrillation, normal sinus rhythm).
- 
 ## ⚙️ How to run the work
 First of all, install the packages indicated in requirements.txt:
 ```bash
