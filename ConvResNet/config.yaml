@@ -1,0 +1,43 @@
+paths:
+  srcdir: C:\Users\maria\Desktop\GITHUB\Data\icentia11k
+  datadir: C:\Users\maria\Desktop\GITHUB\Data\ECG_data
+  model: convresnet.pt
+  scaler: convresnet_scaler.pt
+
+data:
+  splits:
+    train: 0.7
+    valid: 0.2
+    test: 0.1
+  pidx: 00
+  length: 2049
+  N: 100
+  oversampling: 1.0
+  avg_bpm: true
+  amp_thr: 0.25
+  rhythms: [0, 1, 2, 3]
+  batch_size: 1024
+
+loaders:
+  num_workers: 4
+  prefetch_factor: 8
+  batch_size: 1024
+
+scaler: std
+
+optimizer:
+  lr: 1.0e-4
+  weight_decay: 5.0e-3
+  betas: [0.9, 0.999]
+
+fit:
+  num_epochs: 100
+  patience: 10
+  min_delta: 5.0e-2
+  update_every: 50
+  batch_split: 4
+
+model:
+  h0_channels: 64
+  num_blocks: 15
+  
